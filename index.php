@@ -48,7 +48,7 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Counselor</a>
+	      <a class="navbar-brand" href="index.php">Counselor</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -58,7 +58,6 @@
 	          <li class="nav-item active"><a href="index.html" class="nav-link">Accueil</a></li>
 	          <li class="nav-item"><a href="about.html" class="nav-link">A propos de moi</a></li>
 	          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="pricing.html" class="nav-link">Prix</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
@@ -66,11 +65,18 @@
 	  </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap" style="background-image: url('images/5.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center">
-          <div class="col-md-6 ftco-animate d-flex align-items-end">
+          <div class="col-md-6 ftco-animate d-flex align-items-center">
+          	<div class="text w-100">
+	            <div class="mx-3">
+					<img style="width: 100%;" src="./images/New1.jpg" alt="">
+				</div>
+            </div>
+          </div>
+		  <div class="col-md-6 ftco-animate d-flex align-items-end">
           	<div class="text w-100">
 	            <h1 class="mb-4">Bienvenue chez le Dr David Badel</h1>
 	            <p class="mb-4">Je vous aide à retrouver l'harmonie, la paix et la joie, dans vos relations avec vous-même, dans votre couple, et à développer pleinement votre potentiel.</p>
@@ -366,7 +372,7 @@
     			<div class="col-md-4 ftco-animate d-flex">
 	          <div class="block-7 w-100">
 	            <div class="text-center">
-		            <span class="price"><span class="number">Adultes</span>
+		            <h3 style="color: #589167;"><strong>Adultes</strong></h3>
 		            <span class="excerpt d-block"></span>
 		            <ul class="pricing-text mb-5">
 		              <li><span class="fa fa-check mr-2"></span>Conseil individuel</li>
@@ -381,7 +387,7 @@
 	        <div class="col-md-4 ftco-animate d-flex">
 	          <div class="block-7 w-100">
 	            <div class="text-center">
-		            <span class="price"><span class="number">Enfants</span>
+					<h3 style="color: #589167;"><strong>Enfants</strong></h3>
 		            <span class="excerpt d-block"></span>
 		            <ul class="pricing-text mb-5">
 		              <li><span class="fa fa-check mr-2"></span>Conseils aux enfants</li>
@@ -396,7 +402,7 @@
 	        <div class="col-md-4 ftco-animate d-flex">
 	          <div class="block-7 w-100">
 	            <div class="text-center">
-		            <span class="price"><span class="number">Familles</span>
+					<h3 style="color: #589167;"><strong>Familles</strong></h3>
 		            <span class="excerpt d-block"></span>
 		            <ul class="pricing-text mb-5">
 		              <li><span class="fa fa-check mr-2"></span>Services de consultation</li>
@@ -454,7 +460,7 @@
     </section>
 
     <footer class="ftco-footer">
-      <div class="container">
+      <!-- <div class="container">
         <div class="row mb-5">
           <div class="col-sm-12 col-md">
             <div class="ftco-footer-widget mb-4">
@@ -513,7 +519,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="container-fluid px-0 py-5 bg-black">
       	<div class="container">
       		<div class="row">
