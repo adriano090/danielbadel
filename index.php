@@ -1,3 +1,5 @@
+<?php include 'sendemail.php'; ?>
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -70,7 +72,7 @@
         <div class="row no-gutters slider-text align-items-center">
           <div class="col-md-6 ftco-animate d-flex align-items-end">
           	<div class="text w-100">
-	            <h1 class="mb-4">Bienvenue chez le Dr Daniel Badel</h1>
+	            <h1 class="mb-4">Bienvenue chez le Dr David Badel</h1>
 	            <p class="mb-4">Je vous aide à retrouver l'harmonie, la paix et la joie, dans vos relations avec vous-même, dans votre couple, et à développer pleinement votre potentiel.</p>
 	            <p><a href="https://wa.me/+41766290804?text=Bonjour%20Docteur%20Gravier!%20je%20souhaite%20me%20consulter" class="btn btn-primary py-3 px-4">Me contacter</a></p>
             </div>
@@ -416,44 +418,32 @@
     		<div class="row">
     			<div class="col-md-6 half ftco-animate">
     				<h2 class="mb-4">Envoyez un message et prenez contact avec moi !</h2>
-    				<form action="#" class="appointment">
+    				<form action="#" class="appointment" action="sendemail.php" method="post">
     					<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-			              <input type="text" class="form-control" placeholder="Votre Nom">
-			            </div>
+			              				<input type="text" name="name" class="form-control" placeholder="Votre Nom" required>
+			            			</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-			              <input type="text" class="form-control" placeholder="Email">
-			            </div>
+			              				<input type="text" name="email" class="form-control" placeholder="Email" required>
+			            			</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-			    					<div class="form-field">
-	          					<div class="select-wrap">
-	                      <div class="icon"><span class="fa fa-chevron-down"></span></div>
-	                      <select name="" id="" class="form-control">
-	                      	<option value="">Services</option>
-	                        <option value="">Relation Problem</option>
-	                        <option value="">Couple Counseling</option>
-	                        <option value="">Depression Treatment</option>
-	                        <option value="">Family Problem</option>
-	                        <option value="">Personal Problem</option>
-	                        <option value="">Business Problem</option>
-	                      </select>
-	                    </div>
-			              </div>
-			    				</div>
+										<input type="text" name="subject" class="form-control" placeholder="Objet" required>
+			    					</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-			              <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-			            </div>
+			              				<textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+			            			</div>
 								</div>
+								<div class="col-md-12"><?php echo $alert; ?></div>
 								<div class="col-md-12">
 									<div class="form-group">
-			              <input type="submit" value="Send message" class="btn btn-primary py-3 px-4">
+			              <input type="submit" name="submit" value="Send message" class="btn btn-primary py-3 px-4">
 			            </div>
 								</div>
     					</div>
@@ -557,6 +547,18 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  
+  <!-- <script>
+	window.addEventListener('load', function (){
+		Swal.fire(
+			'Good job!',
+			'You clicked the button!',
+			'success'
+			)
+	})
+</script> -->
     
   </body>
 </html>
